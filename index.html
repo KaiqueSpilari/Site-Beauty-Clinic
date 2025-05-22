@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Institucional</title>
+    <!-- FontAwesome para ícones sociais -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- ESTILOS PERSONALIZADOS -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        background-color: white;
+        padding: 1rem 2rem;
+      }
+
+      .navbar-brand img {
+        height: 40px;
+      }
+
+      .hero-banner {
+        background-image: url('./img/log2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center ;
+        height: 300px;
+        position: relative;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero-overlay h1 {
+        color: white;
+        font-size: 4rem;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .social-icons a {
+        margin-left: 10px;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/log1.jpg" alt="Logo Beauty Clinic" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Institucional</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Procedimentos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Fale Conosco</a></li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BANNER COM TEXTO CENTRALIZADO -->
+    <div class="hero-banner">
+      <div class="hero-overlay">
+        <h1>Institucional</h1>
+      </div>
+    </div>
+
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institucional | Beauty Clinic</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      padding: 40px;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .left {
+      flex: 1;
+      min-width: 280px;
+      max-width: 500px;
+    }
+
+    .left h1 {
+      font-size: 2.5rem;
+      color: #b8860b; /* cor dourada */
+      font-weight: bold;
+    }
+
+    .left h2 {
+      font-size: 1.5rem;
+      margin: 10px 0 30px;
+      font-weight: normal;
+    }
+
+    .left img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .right {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .right p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        max-width: 100%;
+      }
+
+      .left h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .left h2 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Coluna Esquerda -->
+    <div class="left">
+      <h1>Beauty<br>Clinic</h1>
+      <h2>Cirurgias e Procedimentos</h2>
+      <img src="log3.png" alt="Médico atendendo paciente">
+    </div>
+
+    <!-- Coluna Direita -->
+    <div class="right">
+      <p>A Beauty Clinic é uma clínica especializada em procedimentos cirúrgicos e minimamente invasivos, referência em excelência, inovação e cuidado integral com o paciente. Localizada em uma das regiões mais privilegiadas, nossa clínica atrai clientes de diversos estados do país, além de ser reconhecida por profissionais da área da saúde como um centro de alta qualidade técnica.</p>
+
+      <p>Nosso compromisso vai muito além da estética! Entregamos segurança, acolhimento e resultados naturais, respeitando a individualidade e os desejos de cada paciente. Para isso, contamos com uma equipe médica altamente qualificada, com ampla experiência em cirurgia plástica e procedimentos estéticos avançados, além de um time multidisciplinar treinado para oferecer um atendimento completo, humano e personalizado.</p>
+
+      <p>Na Beauty Clinic, acompanhamos cada etapa da jornada do paciente, do primeiro contato à total recuperação, com atenção, empatia e responsabilidade. Nosso objetivo é proporcionar não apenas transformações externas, mas também o fortalecimento da autoestima e do bem-estar de quem confia em nosso trabalho.</p>
+
+      <p><strong>Beauty Clinic, cuidado que transforma!</strong></p>
+    </div>
+  </div>
+
+</body>
+</html>

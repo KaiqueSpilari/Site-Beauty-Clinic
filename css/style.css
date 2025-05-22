@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    background-color: white;
+    padding: 1rem 2rem;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .hero-banner {
+    background-image: url('./img/log2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    height: 300px;
+    position: relative;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-overlay h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .social-icons a {
+    margin-left: 10px;
+    color: black;
+  }
