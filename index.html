@@ -166,11 +166,24 @@
 
 .valores-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+@media (max-width: 992px) {
+  .valores-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .valores-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .valor-card {
   background: #fff;
@@ -292,6 +305,29 @@
     </div>
   </div>
 </section>
+
+<body>
+  <div class="container">
+    <h1 class="title">Compromisso com Qualidade E Segurança</h1>
+    <div class="columns">
+      <div class="column">
+        <h3>Qualidade</h3>
+        <p>Atendimento humanizado e personalizado.</p>
+        <p>Resultados naturais e harmônicos.</p>
+        <p>Uso de tecnologia avançada.</p>
+        <p>Transparência em todos os processos.</p>
+        <p>Casos de sucesso e depoimentos reais.</p>
+      </div>
+      <div class="column">
+        <h3>Segurança</h3>
+        <p>Equipe médica qualificada e certificada.</p>
+        <p>Centro cirúrgico moderno e equipado.</p>
+        <p>Protocolos rigorosos de higiene.</p>
+        <p>Avaliação pré-operatória completa.</p>
+        <p>Acompanhamento pós-cirúrgico dedicado.</p>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
