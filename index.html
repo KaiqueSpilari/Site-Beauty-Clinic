@@ -163,24 +163,38 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="img/log1.jpg" alt="Logo Beauty Clinic" />
+        <img src="./img/Logo.img.png" alt="Logo BeautyClinic" height="40" />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto gap-3 text-center">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">BeautyClinic</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tratamento</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Institucional</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Procedimentos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Fale Conosco</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cirurgias Plásticas</a></li>
         </ul>
       </div>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="btn text-white" style="background-color: #D0A95D;">
+          Agendar Consulta
+        </a>
+        <a href="#"><i class="bi bi-facebook fs-4 text-dark"></i></a>
+        <a href="#"><i class="bi bi-instagram fs-4 text-dark"></i></a>
       </div>
     </div>
   </nav>
