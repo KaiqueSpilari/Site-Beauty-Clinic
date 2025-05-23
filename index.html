@@ -212,6 +212,59 @@
   line-height: 1.5;
 }
 
+<style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #ffffff;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      color: #c58a1d;
+      margin-bottom: 40px;
+    }
+
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 250px;
+      max-width: 400px;
+    }
+
+    .column h3 {
+      font-size: 1.4rem;
+      color: #c58a1d;
+      margin-bottom: 20px;
+    }
+
+    .column p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    @media (max-width: 700px) {
+      .columns {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
   </style>
 </head>
 
