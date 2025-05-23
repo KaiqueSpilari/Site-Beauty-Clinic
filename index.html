@@ -3,146 +3,217 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clínica de Cirurgia Plástica</title>
+  <title>Institucional</title>
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Inline Atualizado -->
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
+      line-height: 1.6;
+      padding: 40px;
+      background-color: #fff;
       color: #333;
     }
 
-    header {
-      background-color: #b8860b;
+    /* NAVBAR */
+    .navbar {
+      padding: 0.3rem 1rem;
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+    }
+
+    .navbar-nav .nav-link {
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      font-size: 1.2rem;
+    }
+
+    .social-icons a {
+      color: #333;
+    }
+
+    /* BANNER */
+    .hero-banner {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .hero-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-banner .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-banner h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    .container {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background-color: white;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    h2 {
-      color: #b8860b;
-      margin-bottom: 20px;
       font-size: 2rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto 20px;
-    }
-
-    /* NOVA SEÇÃO: Compromisso com Qualidade e Segurança */
-    .quality-safety-section {
-      margin-top: 60px;
-      padding: 40px 20px;
-      background-color: #fff;
-      text-align: center;
-    }
-
-    .quality-safety-section h2 {
-      color: #b8860b;
-      font-size: 2rem;
-      margin-bottom: 40px;
       font-weight: bold;
+      z-index: 2;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     }
 
-    .quality-safety-container {
+    /* CONTEÚDO */
+    .container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      align-items: flex-start;
       gap: 40px;
+      margin-top: 30px;
     }
 
-    .column {
+    .left {
       flex: 1;
-      max-width: 400px;
-      min-width: 250px;
+      min-width: 300px;
+      max-width: 500px;
+      text-align: center;
     }
 
-    .column h3 {
+    .left h1 {
+      font-size: 2.5rem;
       color: #b8860b;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    .left h2 {
       font-size: 1.3rem;
-      margin-bottom: 20px;
-    }
-
-    .column ul {
-      list-style: none;
-      padding: 0;
+      margin: 8px 0 25px;
+      font-weight: normal;
       color: #333;
-      font-size: 1rem;
-      line-height: 1.6;
     }
 
-    .column ul li {
-      margin-bottom: 12px;
+    .left img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .right {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .right p {
+      margin-bottom: 20px;
+      text-align: justify;
     }
 
     @media (max-width: 768px) {
-      .quality-safety-container {
+      .container {
         flex-direction: column;
         align-items: center;
+      }
+
+      .left, .right {
+        max-width: 100%;
+      }
+
+      .left h1 {
+        font-size: 2rem;
+      }
+
+      .left h2 {
+        font-size: 1.1rem;
       }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>Clínica de Cirurgia Plástica</h1>
-  </header>
-
-  <div class="container">
-    <h2>Institucional</h2>
-    <p>
-      Nossa clínica é referência em cirurgia plástica, aliando experiência, tecnologia e um atendimento humanizado para transformar vidas.
-    </p>
-    <p>
-      Com anos de atuação, contamos com uma equipe altamente qualificada e estrutura completa para proporcionar segurança e resultados naturais aos nossos pacientes.
-    </p>
-    <p>
-      Valorizamos cada detalhe, respeitando a individualidade de cada pessoa. Seu sonho é nosso compromisso.
-    </p>
-  </div>
-
-  <!-- NOVA SEÇÃO: Compromisso com Qualidade e Segurança -->
-  <section class="quality-safety-section">
-    <h2>Compromisso com Qualidade E Segurança</h2>
-    <div class="quality-safety-container">
-      <div class="column">
-        <h3>Qualidade</h3>
-        <ul>
-          <li>Atendimento humanizado e personalizado.</li>
-          <li>Resultados naturais e harmônicos.</li>
-          <li>Uso de tecnologia avançada.</li>
-          <li>Transparência em todos os processos.</li>
-          <li>Casos de sucesso e depoimentos reais.</li>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/Log1.jpg" alt="Logo BeautyClinic" height="40" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto gap-3 text-center">
+          <li class="nav-item"><a class="nav-link" href="#">Institucional</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Procedimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Fale conosco</a></li>
         </ul>
       </div>
-      <div class="column">
-        <h3>Segurança</h3>
-        <ul>
-          <li>Equipe médica qualificada e certificada.</li>
-          <li>Centro cirúrgico moderno e equipado.</li>
-          <li>Protocolos rigorosos de higiene.</li>
-          <li>Avaliação pré-operatória completa.</li>
-          <li>Acompanhamento pós-cirúrgico dedicado.</li>
-        </ul>
+
+      <div class="d-flex align-items-center gap-3">
+        <a href="#"><i class="bi bi-facebook fs-4 text-dark"></i></a>
+        <a href="#"><i class="bi bi-instagram fs-4 text-dark"></i></a>
       </div>
     </div>
-  </section>
+  </nav>
+
+  <!-- BANNER -->
+  <div class="hero-banner">
+    <img src="log2.jpg" alt="Banner Institucional">
+    <div class="overlay"></div>
+    <h1>Institucional</h1>
+  </div>
+
+  <!-- CONTEÚDO -->
+  <div class="container">
+    <div class="left">
+      <h1>BeautyClinic</h1>
+      <h2>Cirurgias e Procedimentos</h2>
+      <img src="baixados.jpg" alt="Imagem da Clínica">
+    </div>
+    <div class="right">
+      <p>A Beauty Clinic é uma clínica especializada em procedimentos cirúrgicos e minimamente invasivos, referência em excelência, inovação e cuidado integral com o paciente. Localizada em uma das regiões mais privilegiadas, nossa clínica atrai clientes de diversos estados do país, além de ser reconhecida por profissionais da área da saúde como um centro de alta qualidade técnica.</p>
+      <p>Nosso compromisso vai muito além da estética! Entregamos segurança, acolhimento e resultados naturais, respeitando a individualidade e os desejos de cada paciente. Para isso, contamos com uma equipe médica altamente qualificada, com ampla experiência em cirurgia plástica e procedimentos estéticos avançados, além de um time multidisciplinar treinado para oferecer um atendimento completo, humano e personalizado.</p>
+      <p>Na Beauty Clinic, acompanhamos cada etapa da jornada do paciente, do primeiro contato à total recuperação, com atenção, empatia e responsabilidade. Nosso objetivo é proporcionar não apenas transformações externas, mas também o fortalecimento da autoestima e do bem-estar de quem confia em nosso trabalho.</p>
+      <p>Beauty Clinic, cuidado que transforma!</p>
+    </div>
+  </div>
 </body>
 </html>
